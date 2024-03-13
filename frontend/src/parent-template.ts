@@ -1,5 +1,5 @@
 import { html, LitElement } from 'lit';
-import 'child-template.js';
+import 'child-template.ts';
 
 class ParentTemplate extends LitElement {
   render() {
