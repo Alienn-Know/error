@@ -186,6 +186,7 @@ public class TestView extends VerticalLayout {
         layout.add(hello);
         add(layout);
 
+
     }
 
     private void handleClick(DomEvent event) {

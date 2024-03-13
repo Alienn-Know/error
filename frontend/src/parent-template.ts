@@ -1,7 +1,13 @@
-@Tag("parent-template")
-@JsModule("./com/example/parent-template.ts")
-public class ParentTemplate extends LitTemplate {
+import { html, LitElement } from 'lit';
+import 'child-template.js';
 
-    @Id("childTemplate")
-    private ChildTemplate child;
+class ParentTemplate extends LitElement {
+  render() {
+    return html`
+      <div>Parent Template</div>
+      <child-template id="childTemplate"></child-template>
+    `;
+  }
 }
+
+customElements.define('parent-template', ParentTemplate);

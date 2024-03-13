@@ -12,7 +12,6 @@ public class ParentTemplate extends LitTemplate {
     public ParentTemplate() {
 
     }
-
     @Id("childTemplate")
     private ChildTemplate child;
 }
